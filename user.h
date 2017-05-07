@@ -36,7 +36,7 @@ struct User
 	vector<int> observing_games;      //game_id;
 	vector<string> block;             //block user names;
     vector<struct Match_info> matches;
-	vector<string> invitations;       //其他选手发给他的invitation，name为发送者，<match name x 600 300>  如果与此一直则匹配成功
+	vector<string> invitations;       //invitation sent from other users, <match name x 600 300>
 	vector<struct Mymail>  mails;	
 	User():name(""), pwd(""), info("<none>"),sockfd(-1), state(0), winN(0),loseN(0),\
 	mygameID(0),match_errno(""){} 
@@ -47,7 +47,7 @@ struct Mymail
 {
 	string ltime;
 	int n;   /*number of unread*/
-	string ifread;    /*default 未读*/
+	string ifread;    /*default unread*/
 	string sender;
 	string receiver;
 	string header;
@@ -68,7 +68,7 @@ struct Mymail
 
 };
 
-struct Match_info //从第一次收到对方的消息创建
+struct Match_info //create when recieve the msg first time
 {
     string partner;
     string invitation_recv; 
@@ -76,7 +76,7 @@ struct Match_info //从第一次收到对方的消息创建
 
     Match_info(string s1, string m0, string m1):partner(""),invitation_recv(""),invitation_send("")
     {
-        partner = s1; //想要match 的人
+        partner = s1; // the person that need to match
         invitation_recv = m0;
         invitation_send = m1;
     }
