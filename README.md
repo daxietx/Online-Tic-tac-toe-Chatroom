@@ -9,8 +9,8 @@ The following commands are supported by  the tic-tac-toe server:
 | Command | Discription |  
 | :------:| :---------: |  
 | who | list all users online |
-| stats [name] | display information about [name] |  
-| match `<name>` `<b/w>` [t] | try to play with [name] as b/w in a t-sec game |
+| stats [name] | display information about `[name]` |  
+| match `<name>` `<b/w>` `[t]` | try to play with `[name]` as b/w in a t-sec game |
 | resign | resign from a game |  
 | game | list all current games |  
 | observe `<num>` | observe game `<num>` |  
@@ -41,6 +41,6 @@ coordinate is represented as XY, where X can be 'A', 'B', 'C' and Y can be 1, 2,
 To run the server and client  
 
 run server:  
-	./server `<portnumber>`  
-run client:
-	./client `<servername>` `<portnumber>`  
+```./server <portnumber>  ```  
+run client:  
+```./client <servername> <portnumber>  ```
