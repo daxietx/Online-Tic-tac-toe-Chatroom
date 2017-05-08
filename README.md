@@ -13,7 +13,7 @@ The following commands are supported by  the tic-tac-toe server:
 | match `<name>` `<b/w>` [t] | try to play with [name] as b/w in a t-sec game |
 | resign | resign from a game |  
 | game | list all current games |  
-| observe `<num>` | observe game `<num`> |  
+| observe `<num>` | observe game `<num>` |  
 | unobserve | unobserve a game |  
 | refresh | redisplay an in-play or observed game |  
 | kibitz `<msg>` | comment on an observed game |  
@@ -22,13 +22,13 @@ The following commands are supported by  the tic-tac-toe server:
 | shout `<msg>` | shout `<msg>` to every one online |  
 | quiet | quiet mode, no broadcast messages (short, kibitz) |  
 | nonquiet | non-quiet mode |  
-| block `<id>` | not any form of communication from `<id`> |  
-| unblock `<id>` | allow communication from `<id`> |  
+| block `<id>` | not any form of communication from `<id>` |  
+| unblock `<id>` | allow communication from `<id>` |  
 | mail `<id>` `<title>` | send id a mail |  
 | listmail | list the header of the mails |  
 | readmail `<msg_num>` | read the particular mail |  
 | deletemail `<msg_num>` | delete the particular mail |  
-| info `<msg>` | change your information to `<msg`> |  
+| info `<msg>` | change your information to `<msg>` |  
 | passwd `<new>` | change password |  
 | exit | quit the system |  
 | quit | quit the system |  
